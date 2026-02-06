@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="APAX Projects - Portfolio of successful web development, ERP, and software solutions" />
+  <title>Projects - APAX Company</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="keywords"
+    content="software portfolio, completed projects, ERP projects, POS implementations, web development portfolio, successful software projects" />
+  <meta name="author" content="APAX Company" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://apaxpos.online/projects.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apaxpos.online/projects.html" />
+  <meta property="og:title" content="Projects - APAX Company" />
+  <meta property="og:description"
+    content="Explore our portfolio of 50+ successful projects including e-commerce platforms, ERP systems, POS solutions, and custom business applications." />
+  <meta property="og:image" content="https://apaxpos.online/logo.png" />
+  <meta property="og:site_name" content="APAX Company" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://apaxpos.online/projects.html" />
+  <meta name="twitter:title" content="Projects - APAX Company" />
+  <meta name="twitter:description"
+    content="50+ successful software projects delivered. View our portfolio of web apps, ERP systems, and business solutions." />
+  <meta name="twitter:image" content="https://apaxpos.online/logo.png" />
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Element SDK -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "APAX Projects Portfolio",
+    "description": "Portfolio showcasing successful software projects across web development, ERP, POS, and custom business solutions."
+  }
+  </script>
+</head>
+
+<body class="h-full">
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="w-full px-6 py-4">
+      <div class="flex items-center justify-between max-w-7xl mx-auto">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+            <img src="logo.png" alt="APAX Logo" class="w-10 h-10 object-contain" />
+          </div>
+          <span class="text-green-600 text-2xl font-bold" id="nav-company-name">APAX</span>
+          <span class="text-green-700 text-2xl font-bold">Softwares</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html"
+            class="text-green-700 hover:text-yellow-300 transition-colors duration-300 font-medium">Home</a>
+          <a href="about.html"
+            class="text-green-700 hover:text-yellow-300 transition-colors duration-300 font-medium">About</a>
+          <a href="services.html"
+            class="text-green-700 hover:text-yellow-300 transition-colors duration-300 font-medium">Services</a>
+          <a href="projects.html"
+            class="text-green-700 hover:text-yellow-300 transition-colors duration-300 font-medium">Projects</a>
+          <a href="contact.html"
+            class="text-green-700 hover:text-yellow-300 transition-colors duration-300 font-medium">Contact</a>
+          <a href="contact.html"><button
+              class="bg-white text-green-600 px-6 py-2 rounded-full transition-all duration-300 font-semibold hover:shadow-lg">
+              Get Started
+            </button></a>
+        </div>
+        <button class="md:hidden text-white text-2xl" id="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div
+      class="mobile-menu fixed top-0 right-0 w-full h-screen bg-gradient-to-br from-green-500 to-blue-500 md:hidden z-50"
+      id="mobile-menu">
+      <div class="flex flex-col h-full">
+        <div class="flex justify-between items-center p-6 border-b border-white border-opacity-20">
+          <span class="text-white text-xl font-bold">Menu</span>
+          <button class="text-white text-2xl" id="mobile-menu-close" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-6 p-6">
+          <a href="index.html" class="text-green hover:text-yellow-300 text-lg font-medium">Home</a>
+          <a href="about.html" class="text-green hover:text-yellow-300 text-lg font-medium">About</a>
+          <a href="services.html" class="text-green hover:text-yellow-300 text-lg font-medium">Services</a>
+          <a href="projects.html" class="text-green hover:text-yellow-300 text-lg font-medium">Projects</a>
+          <a href="contact.html" class="text-green hover:text-yellow-300 text-lg font-medium">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="
+        background: linear-gradient(
+          135deg,
+          #f0fdf4 0%,
+          #dbeafe 50%,
+          #ede9fe 100%
+        );
+      ">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <svg class="floating-shape" width="100" height="100" style="top: 10%; left: 10%">
+      <circle cx="50" cy="50" r="40" fill="#10B981" />
+    </svg>
+    <svg class="floating-shape" width="80" height="80" style="top: 70%; right: 15%; animation-delay: 3s">
+      <rect width="60" height="60" x="10" y="10" fill="#3B82F6" />
+    </svg>
+    <svg class="floating-shape" width="90" height="90" style="bottom: 15%; left: 20%; animation-delay: 6s">
+      <polygon points="45,10 75,80 15,80" fill="#8B5CF6" />
+    </svg>
+    <div class="w-full px-6 relative z-10">
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6" style="
+              background: linear-gradient(135deg, #10b981, #3b82f6, #8b5cf6);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            " id="hero-title">
+          Our Projects
+        </h1>
+        <h2 class="text-5xl md:text-7xl font-bold text-gray-800 mb-8" id="hero-subtitle">
+          Showcasing our successful solutions and satisfied clients
+        </h2>
+        <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12" id="hero-description">
+          Explore selected projects across web, ERP, POS and design.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="contact.html" class="cta-button"><span>Get Started</span></a>
+          <a href="projects.html" class="cta-button" style="
+                background: white;
+                color: #10b981;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+              "><span>View Our Work</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="waves">
+      <div class="wave wave-1"></div>
+      <div class="wave wave-2"></div>
+    </div>
+  </section>
+  <!-- Stats Section -->
+  <section class="py-20 relative overflow-hidden" style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%)">
+    <div class="w-full px-6 relative z-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <p class="text-gray-600 text-lg font-semibold">
+              Projects Completed
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">40+</div>
+            <p class="text-gray-600 text-lg font-semibold">Happy Clients</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <p class="text-gray-600 text-lg font-semibold">
+              Years Experience
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <p class="text-gray-600 text-lg font-semibold">
+              Client Satisfaction
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Filter Section -->
+  <section class="py-12 relative overflow-hidden" style="background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%)">
+    <div class="w-full px-6 relative z-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="filter-btn active" data-category="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-category="web">
+            Web Development
+          </button>
+          <button class="filter-btn" data-category="erp">ERP Software</button>
+          <button class="filter-btn" data-category="pos">POS Systems</button>
+          <button class="filter-btn" data-category="restaurant">
+            Restaurant
+          </button>
+          <button class="filter-btn" data-category="school">School</button>
+          <button class="filter-btn" data-category="design">Design</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Grid -->
+  <section class="py-20 relative overflow-hidden" style="background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%)">
+    <div class="blob blob-3"></div>
+    <div class="w-full px-6 relative z-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+          <!-- Project 1: E-Commerce Website -->
+          <div class="project-card" data-category="web">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #10b981, #059669);
+                  position: relative;
+                ">
+              <img src="project1.jpg" alt="Online Shopping Platform" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-shopping-cart project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Web Development</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Online Shopping Platform
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Full-featured e-commerce website with payment integration,
+                inventory management, and order tracking
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Payment Gateway</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 2: Manufacturing ERP -->
+          <div class="project-card" data-category="erp">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+                  position: relative;
+                ">
+              <img src="project2.png" alt="Manufacturing ERP Solution" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-industry project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">ERP Software</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Manufacturing ERP Solution
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Complete ERP system for production planning, inventory
+                control, and supply chain management
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">ERP</span>
+                <span class="project-tag">Inventory</span>
+                <span class="project-tag">Reports</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 3: Retail POS -->
+          <div class="project-card" data-category="pos">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+                  position: relative;
+                ">
+              <img src="project3.jpg" alt="Retail Store POS" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-cash-register project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">POS System</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Retail Store POS
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Modern POS system with barcode scanning, customer loyalty
+                programs, and real-time sales analytics
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">POS</span>
+                <span class="project-tag">Barcode</span>
+                <span class="project-tag">Analytics</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 4: Restaurant System -->
+          <div class="project-card" data-category="restaurant">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #f59e0b, #d97706);
+                  position: relative;
+                ">
+              <img src="project4.webp" alt="Fine Dining Restaurant System" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-utensils project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Restaurant</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Fine Dining Restaurant System
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Table management, kitchen display, online ordering, and
+                delivery tracking for premium restaurant
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Orders</span>
+                <span class="project-tag">Kitchen</span>
+                <span class="project-tag">Delivery</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 5: School Management -->
+          <div class="project-card" data-category="school">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #ef4444, #dc2626);
+                  position: relative;
+                ">
+              <img src="project5.png" alt="International School Portal" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-graduation-cap project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">School System</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                International School Portal
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Comprehensive system for 2000+ students with admissions,
+                exams, grades, and parent portal
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Students</span>
+                <span class="project-tag">Exams</span>
+                <span class="project-tag">Portal</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 6: Corporate Website -->
+          <div class="project-card" data-category="web">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #06b6d4, #0891b2);
+                  position: relative;
+                ">
+              <img src="project6.jpg" alt="Corporate Business Website" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-building project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Web Development</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Corporate Business Website
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Professional corporate website with CMS, blog, career portal,
+                and multi-language support
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">CMS</span>
+                <span class="project-tag">Multilingual</span>
+                <span class="project-tag">Blog</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 7: Healthcare ERP -->
+          <div class="project-card" data-category="erp">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #ec4899, #db2777);
+                  position: relative;
+                ">
+              <img src="project7.jpg" alt="Hospital Management System" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-hospital project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">ERP Software</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Hospital Management System
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Patient records, appointments, billing, pharmacy, and lab
+                management for multi-specialty hospital
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Healthcare</span>
+                <span class="project-tag">Patients</span>
+                <span class="project-tag">Billing</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 8: Cafe POS -->
+          <div class="project-card" data-category="pos restaurant">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #84cc16, #65a30d);
+                  position: relative;
+                ">
+              <img src="project8.png" alt="Coffee Shop Chain POS" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-coffee project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">POS System</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Coffee Shop Chain POS
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Multi-location POS with recipe management, employee tracking,
+                and loyalty rewards program
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Multi-Location</span>
+                <span class="project-tag">Loyalty</span>
+                <span class="project-tag">Recipes</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+          <!-- Project 9: Brand Design -->
+          <div class="project-card" data-category="design">
+            <div class="project-image" style="
+                  background: linear-gradient(135deg, #f97316, #ea580c);
+                  position: relative;
+                ">
+              <img src="project9.webp" alt="Complete Brand Identity" />
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <i class="fas fa-palette project-icon"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Graphic Design</span>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                Complete Brand Identity
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Logo design, brand guidelines, business cards, letterheads,
+                and marketing materials
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Branding</span>
+                <span class="project-tag">Logo</span>
+                <span class="project-tag">Marketing</span>
+              </div>
+              <button class="view-project-btn">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="py-20 relative overflow-hidden" style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%)">
+    <div class="w-full px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white">
+          Start Your Project Today
+        </h2>
+        <p class="text-xl text-white text-opacity-90 mb-12">
+          Let's create something amazing together
+        </p>
+        <a href="contact.html" class="cta-button"><span>Get In Touch</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white py-12 border-t border-gray-200">
+    <div class="w-full px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center"
+                style="background: linear-gradient(135deg, #10b981, #3b82f6)">
+                <span class="text-white font-bold text-xl">A</span>
+              </div>
+              <span class="text-xl font-bold text-gray-800" id="footer-company-name">APAX</span>
+            </div>
+            <p class="text-gray-600">
+              Transforming ideas into digital reality
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-gray-800 mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="text-gray-600 hover:text-green-500 transition-colors">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-gray-600 hover:text-green-500 transition-colors">About</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-gray-600 hover:text-green-500 transition-colors">Services</a>
+              </li>
+              <li>
+                <a href="projects.html" class="text-gray-600 hover:text-green-500 transition-colors">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-gray-800 mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="services.html" class="text-gray-600 hover:text-green-500 transition-colors">Web Development</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-gray-600 hover:text-green-500 transition-colors">ERP Software</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-gray-600 hover:text-green-500 transition-colors">Business
+                  Management</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-gray-600 hover:text-green-500 transition-colors">Graphic
+                  Designing</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-gray-800 mb-4">Contact</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-green-500"></i>
+                <span class="text-gray-600 text-sm">apaxpos@gmail.com</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-green-500"></i>
+                <span class="text-gray-600 text-sm">0327-7003331</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-green-500"></i>
+                <span class="text-gray-600 text-sm">0316-0444543</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-phone text-green-500"></i>
+                <span class="text-gray-600 text-sm">0339-4387287</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-8 text-center">
+          <p class="text-gray-600">
+            © 2026 APAX Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top Button -->
+  <div class="scroll-to-top" id="scroll-to-top">
+    <i class="fas fa-arrow-up text-white text-xl"></i>
+  </div>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/923373300112" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+    <i class="fab fa-whatsapp text-white text-2xl"></i>
+  </a>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      function c() {
+        var b = a.contentDocument || a.contentWindow.document;
+        if (b) {
+          var d = b.createElement("script");
+          d.innerHTML =
+            "window.__CF$cv$params={r:'9b60c269915d34e9',t:'MTc2NzA4OTU1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+          b.getElementsByTagName("head")[0].appendChild(d);
+        }
+      }
+      if (document.body) {
+        var a = document.createElement("iframe");
+        a.height = 1;
+        a.width = 1;
+        a.style.position = "absolute";
+        a.style.top = 0;
+        a.style.left = 0;
+        a.style.border = "none";
+        a.style.visibility = "hidden";
+        document.body.appendChild(a);
+        if ("loading" !== document.readyState) c();
+        else if (window.addEventListener)
+          document.addEventListener("DOMContentLoaded", c);
+        else {
+          var e = document.onreadystatechange || function () { };
+          document.onreadystatechange = function (b) {
+            e(b);
+            "loading" !== document.readyState &&
+              ((document.onreadystatechange = e), c());
+          };
+        }
+      }
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

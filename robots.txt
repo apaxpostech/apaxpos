@@ -1,0 +1,18 @@
+# robots.txt for APAX Software Company
+# This file tells search engine crawlers which pages to index
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://apaxpos.online/sitemap.xml
+
+# Crawl-delay (optional - only if needed to reduce server load)
+# Crawl-delay: 10
+
+# Disallow access to specific directories (if any)
+# Example:
+# Disallow: /admin/
+# Disallow: /_sdk/
+# Disallow: /temp/
